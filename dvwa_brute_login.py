@@ -11,4 +11,4 @@ allow_redirects = False,
 )
 
 print(r.status_code)
-print(r.text)
+print(r.text) #grep the output to check if it's right
