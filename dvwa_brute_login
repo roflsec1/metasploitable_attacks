@@ -1,0 +1,14 @@
+from requests import *
+
+parameters = {'username':'Admin', 'password':'password', 'Login':'Login'}
+
+cookie = {'security':'high', 'security':'low', 'PHPSESSID':'dac572d57cee753cf77e7dbcd316e061'}
+header = {'Referer':'http://metasploitable/dvwa/brute'}
+r = get("http://metasploitable/dvwa/vulnerabilities/brute/",
+params = parameters,
+cookies = cookie,
+allow_redirects = False,
+)
+
+print(r.status_code)
+print(r.text)
