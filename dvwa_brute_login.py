@@ -2,7 +2,7 @@ from requests import *
 
 parameters = {'username':'Admin', 'password':'password', 'Login':'Login'}
 
-cookie = {'security':'high', 'security':'low', 'PHPSESSID':'dac572d57cee753cf77e7dbcd316e061'}
+cookie = {'security':'high', 'security':'low', 'PHPSESSID':'insert_cookie_here'}
 header = {'Referer':'http://metasploitable/dvwa/brute'}
 r = get("http://metasploitable/dvwa/vulnerabilities/brute/",
 params = parameters,
